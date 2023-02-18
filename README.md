@@ -20,21 +20,28 @@ We want to ramp up new developers to be able to meaningfully contribute to EVM p
     - Ex 1: [Hardhat quick start](https://hardhat.org/hardhat-runner/docs/getting-started)
     - Ex 2: [Deploy to Goerli and verify contract](https://hardhat.org/hardhat-runner/docs/guides/verifying)
         - Use `.env` file instead of suggested method in tutorial
-    - Ex 3: Deploy [Illini Blockchain NFT](https://github.com/IlliniBlockchain/nft-mint/tree/main/contracts), but with your own image
-        - Mint it, and make sure it's viewable on [OpenSea](https://testnets.opensea.io)!
+    - Ex 3: Deploy a basic counter smart contract and access it from a basic front end!
 
         Steps:
-        1. Create a new hardhat project under the directory `my-nft`
-        2. Copy our contracts for the NFT into your `contracts` folder
-        3. Install the OpenZeppelin contracts that our NFT contract imports
+        1. Create a new hardhat project under the directory 'my-counter'
+        2. Configure your .env file and hardat.config file like before - make sure the wallet you are using has some testeth
+        3. Delete the existing smart contracts in the smart contracts folder
+        4. Create a basic counter smart contract.  
+           1. It should have 1 global state variable count and 2 public function one to increment, and one to get the count.
+           2. Maybe write some test cases in the run.js folder?
+        5. Deploy to Goerli and verify your contract on etherscan.  Increment the count a few times using the etherscan ui.
+        6. Clone the following [repository](https://github.com/IlliniBlockchain/evm-onboarding-basic-counter-frontend) and create a branch
+            ``` git checkout -b <your-name-counter> ```
+            
+        7. cd into the repository, install dependencies and start on local host
             ```
-            npm install @openzeppelin/contracts
+            npm i
+            npm start
             ```
-        4. Modify the SVG image inside of the contract
-        5. Compile, deploy, and verify on Goerli Testnet
-        6. Use the Etherscan UI to mint your NFT
-        7. Go to [OpenSea Testnets](https://testnets.opensea.io), search your address,
-        filter to Goerli NFTs, and see your NFT!
+        8.  Create an [Alchemy Account](https://www.alchemy.com/) and get an api key for goerli
+        9.  Head into the App.js folder, and make updates so that it connects to your smart contract, and so getCount() works
+        10. Push your changes and make a PR.  
+        11. All Done!
 
 </details>
 
