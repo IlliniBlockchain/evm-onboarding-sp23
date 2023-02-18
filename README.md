@@ -22,7 +22,7 @@ We want to ramp up new developers to be able to meaningfully contribute to EVM p
         - Use `.env` file instead of suggested method in tutorial
     - Ex 3: Deploy a basic counter smart contract and access it from a basic front end!
     
-    Steps for Ex 3:
+**Steps for Ex 3:**
 1. Create a new hardhat project under the directory 'my-counter'
 2. Configure your .env file and hardat.config file like before - make sure the wallet you are using has some testeth
 3. Delete the existing smart contracts in the smart contracts folder
