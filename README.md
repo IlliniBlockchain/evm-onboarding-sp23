@@ -38,7 +38,7 @@ We want to ramp up new developers to be able to meaningfully contribute to EVM p
     npm i
     npm start
     ```
-8.  Create an [Alchemy Account](https://www.alchemy.com/) and get an api key for goerli
+8.  Get the Alchemy API key from step one, you will need to use it to connect to the Georli network!
 9.  Head into the ``App.js`` folder, and make updates so that it connects to your smart contract, and so ```getCount()``` works
 10. Push your changes and make a PR.  
 11. All Done!
