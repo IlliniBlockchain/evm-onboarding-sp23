@@ -59,7 +59,7 @@ Solidity!
         git pull
         git checkout -b <yourname-day-2>
         git fetch origin day-2
-        git merge origin/day-2
+        git rebase origin/day-2
         ```
     2. Checkout the following files:
         - `simple-token/contracts/IERC20Simple.sol` is the interface contract for our simplified token.
@@ -90,7 +90,7 @@ Client side!
         git pull
         git checkout -b <yourname-day-3>
         git fetch origin day-3
-        git merge origin/day-3
+        git rebase origin/day-3
         ```
     2. Checkout `simple-token-app`, most notably `simple-token-app/app/src/pages/App.js`
     3. You will need to..
