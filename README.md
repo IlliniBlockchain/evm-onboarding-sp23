@@ -24,10 +24,10 @@ We want to ramp up new developers to be able to meaningfully contribute to EVM p
     
 **Steps for Ex 3:**
 1. Create a new hardhat project under the directory 'my-counter'
-2. Configure your .env file and hardat.config file like before - make sure the wallet you are using has some testeth
+2. Configure your .env file and hardat.config file like before - make sure the wallet you are using has some test eth
 3. Delete the existing smart contracts in the smart contracts folder
 4. Create a basic counter smart contract.  
-   1. It should have 1 global state variable count and 2 public function one to increment, and one to get the count.
+   1. It should have 1 global state variable ```count``` and 2 public functions, one to increment, and one to get the count.
    2. Maybe write some test cases in the run.js folder?
 5. Deploy to Goerli and verify your contract on etherscan.  Increment the count a few times using the etherscan ui.
 6. Clone the following [repository](https://github.com/IlliniBlockchain/evm-onboarding-basic-counter-frontend) and create a branch
@@ -39,7 +39,7 @@ We want to ramp up new developers to be able to meaningfully contribute to EVM p
     npm start
     ```
 8.  Create an [Alchemy Account](https://www.alchemy.com/) and get an api key for goerli
-9.  Head into the App.js folder, and make updates so that it connects to your smart contract, and so getCount() works
+9.  Head into the ``App.js`` folder, and make updates so that it connects to your smart contract, and so ```getCount()``` works
 10. Push your changes and make a PR.  
 11. All Done!
 
